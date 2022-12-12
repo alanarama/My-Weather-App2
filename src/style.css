@@ -115,3 +115,9 @@ h3 {
   font-size: 12px;
   padding: 0 0 0 90px;
 }
+.gitHub {
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #253c59;
+}
