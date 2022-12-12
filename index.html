@@ -1,16 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="src/style.css">
-<body>
-    <h1>
-        Hello World
-    </h1>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <link rel="stylesheet" href="src/script.js">
-</body>
+    <script
+    src="https://kit.fontawesome.com/3f2efdf1ae.js"
+    crossorigin="anonymous"
+  ></script>
+    <title>Weather Wireframe</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <div class="main-card">
+          <div class="card">
+            <div class="input-group">
+                <form id="city-search">
+                    <input type="text" id="text-input" placeholder="Enter your city" />
+                    <input type="submit" value="Search" class="button" />
+                    <button type="button" id="current-loc-button" class="btn btn-primary btn-sm">Current Location</button>
+                    
+                  </form>
+              
+            </div>
+            <br />
+            
+
+            <div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="emoji-one"> <i class="fa-solid fa-sun"></i></div>
+    </div>
+    <div class="col"> 
+      <h6><div class="time">Day, Time</div></h6>
+      <h1><div id="cityLocation"> </div> </h1>  
+      <h1><span id="temp-display"> </span></h1><span class="units">
+        
+      <h6 id="temp-des"> </h6></div>
+    <div class="col">
+        <div class="extraInfo">
+          <br>
+          <br>
+          <br>
+          <br>
+          
+
+          <p><div id="wind-speed"></div>Humidity: <span id="humidity"> </span> </div> <div>pressure: <span id="pressure"> </span></div> </p>
+        </div>
+        </div>
+       </div>
+       <div class="row">
+          <div class="col">
+            <div class="card-days">
+              <div class="card">
+                <div class="future-date">Sun</div>
+
+                <div class="weatherIcons">
+                  <i class="fa-solid fa-cloud-sun weather-icon"></i>
+                </div>
+                <div class="future-temp">12°</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-days">
+              <div class="card">
+                <div class="future-date">Mon</div>
+                <div class="weatherIcons">
+                  <i class="fa-solid fa-cloud-rain weather-icon"></i>
+                </div>
+                <div class="future-temp">11°</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-days">
+              <div class="card">
+                <div class="future-date">Tue</div>
+                <div class="weatherIcons">
+                  <i class="fa-solid fa-cloud-rain weather-icon"></i>
+                </div>
+                <div class="future-temp">10°</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-days">
+              <div class="card">
+                <div class="future-date">Wed</div>
+                <div class="weatherIcons">
+                  <i class="fa-solid fa-cloud-rain weather-icon"></i>
+                </div>
+                <div class="future-temp">10°</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-days">
+              <div class="card">
+                <div class="future-date">Thur</div>
+                <div class="weatherIcons">
+                  <i class="fa-solid fa-cloud-sun weather-icon"></i>
+                </div>
+                <div class="future-temp">12°</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-days">
+              <div class="card">
+                <div class="future-date">Fri</div>
+                <div class="weatherIcons">
+                  <i class="fa-solid fa-cloud-sun weather-icon"></i>
+                </div>
+                <div class="future-temp">12°</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>     
+    </div>
+  </div>
+  
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
 </html>

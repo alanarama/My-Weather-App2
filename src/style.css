@@ -1,0 +1,117 @@
+.container {
+  font-family: "Arvo", serif;
+  max-width: 900px;
+  border-radius: 20px;
+}
+
+h1 {
+  display: block;
+  text-align: left;
+  color: #253c59;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #4f5873;
+}
+
+.currentLocation {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  align-items: left;
+}
+.temp {
+  margin: 0 0 0 0;
+  padding: 0;
+}
+h6 {
+  text-align: left;
+}
+.time {
+  color: #253c59;
+  text-align: left;
+}
+h3 {
+  color: #253c59;
+  text-align: left;
+  margin: 0 0 0 105px;
+}
+.emoji-one {
+  color: #d9b70d;
+  font-size: 40px;
+  padding: 0;
+  text-align: right;
+}
+
+.future-date {
+  color: #253c59;
+  padding: 10px;
+  text-align: center;
+  font-weight: bolder;
+}
+.future-temp {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.weather-app {
+  margin: 0px;
+  background-color: #d5e7f2;
+  border-radius: 20px;
+}
+
+.row {
+  margin: 20px 0 20px 0;
+  max-height: 700px;
+  text-align: center;
+  padding: 0 0 10px 0px;
+}
+.col {
+  max-height: 400px;
+  max-width: 300px;
+  text-align: left;
+}
+.weatherIcons {
+  text-align: center;
+
+  font-size: 40px;
+  color: #fff;
+  transition: all 200ms;
+}
+.weatherIcons:hover {
+  transform: scale(1.2);
+}
+.fa-solid.fa-sun {
+  font-size: 110px;
+  padding: 10px;
+  text-align: right;
+}
+.card {
+  max-height: 100%;
+  border-radius: 50px;
+  border: none;
+  background-color: #d5e7f2;
+}
+.card-days .card {
+  max-height: 400px;
+  background-color: #b2cfe2;
+  transition: all 200ms;
+  border-radius: 20px;
+}
+.card-days .card :hover {
+  transform: scale(1.2);
+}
+.main-card {
+  padding: 10px;
+  border-radius: 20px;
+}
+.location.col {
+  padding: 20px 0 50px 0;
+}
+.extraInfo {
+  text-align: left;
+  font-size: 12px;
+  padding: 0 0 0 90px;
+}
