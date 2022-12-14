@@ -70,7 +70,7 @@ function getCurrentPosition(position) {
   axios.get(apiUrl).then(showTemp);
 }
 
-function showTempForCurrentLoc() {
+function showTempForCurrentLoc(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(getCurrentPosition);
 }
