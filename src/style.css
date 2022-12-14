@@ -31,8 +31,6 @@ li::first-letter {
 .celsius-link {
   text-decoration: none;
 }
-.container {
-}
 
 .footer {
   color: #fff;
@@ -56,7 +54,7 @@ li::first-letter {
   margin: 30px auto;
 }
 
-.weather-temperature. img {
+.weather-temperature img {
   margin-right: 5px;
   height: 64px;
   width: 64px;

@@ -16,9 +16,9 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="src/style.css">
+    
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
+ <link rel="stylesheet" href="src/style.css">
     <script
     src="https://kit.fontawesome.com/3f2efdf1ae.js"
     crossorigin="anonymous"
@@ -27,126 +27,62 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="weather-app">
-        <div class="main-card">
-          <div class="card">
-            <div class="input-group">
-                <form id="city-search">
-                    <input type="text" id="text-input" placeholder="Enter your city" />
-                    <input type="submit" value="Search" class="button" />
-                    <button type="button" id="current-loc-button" class="btn btn-primary btn-sm">Current Location</button>
-                    
-                  </form>
-              
-            </div>
-            <br />
+  <div class="container">
+      <div class="weeather-app-wrapper">
+<div class="weather-app">
+    <div class="input-group">
+        <form id="city-search" class="mb-5">
+            <input type="text" id="text-input" placeholder="Enter city.." />
+            <input type="submit" value="Search" class="btn btn-primary btn-sm" />
+            <button type="button" id="current-loc-button" class="btn btn-success btn-sm">Current Location</button>
             
-
-            <div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="emoji-one"> <i class="fa-solid fa-sun"></i></div>
+          </form>
+      
     </div>
-    <div class="col"> 
-      <h6><div class="time">Day, Time</div></h6>
-      <h1><div id="cityLocation"> </div> </h1>  
-      <h1><span id="temp-display"> </span></h1><span class="units">
-        
-      <h6 id="temp-des"> </h6></div>
-    <div class="col">
-        <div class="extraInfo">
-          <br>
-          <br>
-          <br>
-          <br>
-          
+    <div class="overview">
+<h1 id="city">
+</h1>
 
-          <p><div id="wind-speed"></div>Humidity: <span id="humidity"> </span> </div> <div>pressure: <span id="pressure"> </span></div> </p>
-        </div>
-        </div>
-       </div>
-       <div class="row">
-          <div class="col">
-            <div class="card-days">
-              <div class="card">
-                <div class="future-date">Sun</div>
-
-                <div class="weatherIcons">
-                  <i class="fa-solid fa-cloud-sun weather-icon"></i>
-                </div>
-                <div class="future-temp">12°</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card-days">
-              <div class="card">
-                <div class="future-date">Mon</div>
-                <div class="weatherIcons">
-                  <i class="fa-solid fa-cloud-rain weather-icon"></i>
-                </div>
-                <div class="future-temp">11°</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card-days">
-              <div class="card">
-                <div class="future-date">Tue</div>
-                <div class="weatherIcons">
-                  <i class="fa-solid fa-cloud-rain weather-icon"></i>
-                </div>
-                <div class="future-temp">10°</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card-days">
-              <div class="card">
-                <div class="future-date">Wed</div>
-                <div class="weatherIcons">
-                  <i class="fa-solid fa-cloud-rain weather-icon"></i>
-                </div>
-                <div class="future-temp">10°</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card-days">
-              <div class="card">
-                <div class="future-date">Thur</div>
-                <div class="weatherIcons">
-                  <i class="fa-solid fa-cloud-sun weather-icon"></i>
-                </div>
-                <div class="future-temp">12°</div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card-days">
-              <div class="card">
-                <div class="future-date">Fri</div>
-                <div class="weatherIcons">
-                  <i class="fa-solid fa-cloud-sun weather-icon"></i>
-                </div>
-                <div class="future-temp">12°</div>
-              </div>
-            </div>
+<ul>
+  <li>Last updated: <span id="date">
+  </span>
+  </li>
+  <li id="description">
+  </li>
+</ul>
+</div>
+<div class="row">
+  <div class="col-6">
+      <div class="d-flex weather-temperature">
+          <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear" id="icon" />
+          <div>
+            <strong id="temperature">12</strong
+            ><span class="units"><a href="#" id="celsius-link">°C </a>|<a href="#" id="fahrenheit-link">°F </a></span>
           </div>
         </div>
-    </div>     
-    </div>
   </div>
   
-</div>
+  <div class="col-6">
+    <ul>
 
-            
-          </div>
-        </div>
-      </div>
-    </div>
-   <a href="https://github.com/alanarama/My-Weather-App2" class="gitHub">Open-source code</a>
+      <li> 
+        Humidity: <span id="humidity"></span>%
+      </li>
+      <li>
+        <span id="wind"></span>
+      </li>
+    </ul>
+  </div>
+
+</div>
+</div>
+  </div>
+  <small class="footer">
+      <a href="https://github.com/alanarama/My-Weather-App2" class="gitHub">Open-source code</a> by Alana Groves
+  </small>
+  
     <script src="src/script.js"></script>
   </body>
+   
+
 </html>
