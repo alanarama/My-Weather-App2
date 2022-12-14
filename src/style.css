@@ -2,10 +2,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #083359;
 }
+a {
+  text-decoration: none;
+  color: #75a3bf;
+  transition: ease-in-out 150ms;
+}
 
+a.hover {
+  color: #224459;
+}
 h1 {
   color: #083359;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
@@ -28,10 +36,6 @@ li::first-letter {
   text-transform: capitalize;
 }
 
-.celsius-link {
-  text-decoration: none;
-}
-
 .footer {
   color: #fff;
 }
@@ -41,6 +45,9 @@ li::first-letter {
 
 .text-input {
   border-radius: 5px;
+}
+.units {
+  text-decoration: none;
 }
 
 .weather-app {

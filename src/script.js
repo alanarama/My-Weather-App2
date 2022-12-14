@@ -71,14 +71,13 @@ function getCurrentPosition(position) {
 }
 
 function showTempForCurrentLoc(event) {
-  event.preventDefault();
   navigator.geolocation.getCurrentPosition(getCurrentPosition);
 }
 
 let celsiusTemperature = null;
 
-let currentlocation = document.querySelector("#current-loc-button");
-currentlocation.addEventListener("click", showTempForCurrentLoc);
+let currentLocation = document.querySelector("#current-loc-button");
+currentLocation.addEventListener("click", showTempForCurrentLoc);
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
@@ -99,3 +98,5 @@ function displayCelsiusTemperature(event) {
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 showTempForCurrentLoc();
+
+getCurrentPosition(position);
