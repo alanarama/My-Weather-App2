@@ -2,8 +2,12 @@ body {
   font-family: arial, sans-serif;
   background-color: #ECEBED;
 }
-body.dark {
+.dark {
   background-color: #7A7C7F;
+}
+
+.light {
+  background-color: #ECEBED;
 }
 h1 {
   color: #000000;
