@@ -1,13 +1,17 @@
 body {
   font-family: arial, sans-serif;
+  background-color: #ECEBED;
 }
-
+body.dark {
+  background-color: #7A7C7F;
+}
 h1 {
-  color: #878787;
-  font-size: 24px;
+  color: #000000;
+  font-size: 28px;
   font-weight: 100;
   line-height: 28px;
-  margin-bottom: 0;
+  margin-bottom: 0 0 2 0;
+  opacity: 100%;
 }
 
 ul {
@@ -20,7 +24,7 @@ li {
   margin: 0;
   padding: 0;
 
-  color: rgb(135, 135, 135);
+  color: rgb(86, 86, 86);
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
@@ -29,22 +33,101 @@ li {
 li:first-letter {
   text-transform: capitalize;
 }
-.row {
-  margin: 0 0 20px 0;
-}
-.weather-app-wrapper {
-  max-width: 600px;
-  margin: 30px auto;
+
+.card {
+  max-width: 90px;
+  border: 1;
+  margin: 5px;
+  
 }
 
+.card-body {
+  border: 1 solid;
+  background-color: antiquewhite;
+  padding-top: 10px;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  background-color: #E8E8E8;
+  opacity: 0.7;
+}
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+.col-2 {
+  padding: none;
+}
+.col-4 {
+  align-items: center;
+}
+.col-6 {
+  max-width: 300px;
+}
+#extra-info {
+  font-size: 12px;
+}
+.footer {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+#forecast-cards {
+  align-items: center;
+  max-width: 100px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 0 auto;
+  background-color: rgb (242, 242, 242, 0.5);
+  opacity: .7;
+  border: 1 solid;
+}
+#forecast-cards:hover {
+  background-color:#BCBEBF;
+}
+#forecast {
+  max-width: 648px;
+  margin: 0 auto;
+}
+.input-group {
+  margin-left: 10px;
+  margin-top: 10px;
+  max-height: 60px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5px;
+}
+#rowrow {
+  margin: 0 auto;
+}
+
+#row-forecast {
+  padding: 0;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.weather-app-wrapper {
+  display: block;
+  align-items: center;
+  max-width: 648px;
+  margin: 0 auto;
+  margin-top: 60px;
+  background-image: url(https://images.pexels.com/photos/773953/pexels-photo-773953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  border-radius: 20px;
+  background-size: cover;
+}
+.wrapper-image {
+  max-width: 600px;
+}
 .weather-app {
-  padding: 20px;
-  border: 1px solid #dadde1;
-  border-radius: 5px;
+  padding: 10px;
 }
 
 .overview {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin-left: 10px;
 }
 
 .weather-temperature img {
@@ -74,16 +157,15 @@ li:first-letter {
 .weather-temperature .active:hover {
   text-decoration: none;
 }
-
 .weather-forecast {
-  margin-top: 20px;
-  text-align: center;
-  color: #000;
+  display: block;
+  margin: 0 auto;
+  max-width: 648px;
 }
-
 .weather-forecast-date {
   font-size: 16px;
-  opacity: 0.5;
+
+  color: #000000;
 }
 
 .weather-forecast-temperature-min {

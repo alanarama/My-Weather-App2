@@ -35,14 +35,15 @@ function displayForecast(response) {
 
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<span class="row">`;
+  let forecastHTML = `<span class="row" id="rowrow">`;
 
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
       forecastHTML =
         forecastHTML +
         `
-<div class="col-2">
+<div class="col-2" id = "row-forecast">
+<div class="card" id="forecast-cards">
 <div class="weather-forecast-date">
 ${formatDay(forecastDay.dt)}
 </div>
@@ -56,6 +57,7 @@ ${formatDay(forecastDay.dt)}
 <span class="weather-forecast-temperature-min"> ${Math.round(
           forecastDay.temp.min
         )}°</span>
+</div>
 </div>
 </div>
   </div>`;
