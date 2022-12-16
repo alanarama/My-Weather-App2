@@ -118,7 +118,6 @@ li:first-letter {
   margin: 0 auto;
   align-items: center;
 }
-
 .weather-app-wrapper {
   display: block;
   align-items: center;
@@ -129,6 +128,7 @@ li:first-letter {
   border-radius: 20px;
   background-size: cover;
 }
+
 .wrapper-image {
   max-width: 600px;
 }
