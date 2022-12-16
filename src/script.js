@@ -133,10 +133,12 @@ currentLocation.addEventListener("click", showTempForCurrentLoc);
 search("London");
 
 function darkMode() {
+  const date = new Date();
   let hour = date.getHours();
   if (hour >= 20) {
     let nightBody = document.querySelector("body");
-    nightBody.classList.remove("light").add("dark");
+    nightBody.classList.remove("light");
+    nightBody.classList.add("dark");
   }
 }
-let nightMode = document.querySelector("body", darkMode);
+darkMode();
