@@ -1,13 +1,13 @@
 body {
   font-family: arial, sans-serif;
-  background-color: #ECEBED;
+  background-color: #ecebed;
 }
 .dark {
-  background-color: #7A7C7F;
+  background-color: #303030;
 }
 
 .light {
-  background-color: #ECEBED;
+  background-color: #ecebed;
 }
 h1 {
   color: #000000;
@@ -42,19 +42,18 @@ li:first-letter {
   max-width: 90px;
   border: 1;
   margin: 5px;
-  
 }
 
 .card-body {
   border: 1 solid;
   background-color: antiquewhite;
   padding-top: 10px;
-  border-radius: 20px;
+  border-radius: 15px;
   padding-bottom: 20px;
-  background-color: #E8E8E8;
+  background-color: #e8e8e8;
   opacity: 0.7;
 }
-}
+
 .mb-5 {
   margin-bottom: 5px;
 }
@@ -82,11 +81,12 @@ li:first-letter {
   padding-top: 10px;
   margin: 0 auto;
   background-color: rgb (242, 242, 242, 0.5);
-  opacity: .7;
+  opacity: 0.7;
   border: 1 solid;
 }
 #forecast-cards:hover {
-  background-color:#BCBEBF;
+  background-color: #bcbebf;
+  opacity: 100;
 }
 #forecast {
   max-width: 648px;
