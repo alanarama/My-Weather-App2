@@ -4,17 +4,50 @@ body {
   height: 100%;
 }
 .dark {
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(0, 0, 0) 0%,
-    rgb(64, 64, 64) 90.2%
-  );
+  background-color: #1f2437;
 }
 
 .light {
   background-color: #ecebed;
 }
+.dark .weather-app-wrapper {
+  display: block;
+  align-items: center;
+  max-width: 648px;
+  margin: 0 auto;
+  margin-top: 60px;
+  border-radius: 20px;
+  background-size: cover;
+  background-image: url("https://images.pexels.com/photos/3213577/pexels-photo-3213577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+.dark .card-body {
+  background-color: #4d6290;
+  opacity: 0.7;
+}
 
+.dark h1 {
+  color: #fff;
+}
+.dark li {
+  color: #fff;
+}
+.dark .units {
+  color: #fff;
+}
+.dark #temperature {
+  color: #fff;
+}
+
+.dark #forecast-cards {
+  background-color: rgb(67, 83, 124, 0.5);
+}
+.dark #forecast-cards:hover {
+  background-color: #4d6290;
+  opacity: 100;
+}
+.dark .weather-forecast-temperatures {
+  color: #fff;
+}
 h1 {
   color: #000000;
   font-size: 28px;
